@@ -26,7 +26,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 			{
 				if (*pbs->Data == 0)
 				{
-					SetTimer(hWnd, 42, 5000, (TIMERPROC)NULL);
+					//sleep after 1 minute
+					SetTimer(hWnd, 42, 60 * 1000, (TIMERPROC)NULL);
 				}
 				else if (*pbs->Data == 1)
 				{
