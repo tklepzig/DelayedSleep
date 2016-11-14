@@ -44,6 +44,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		{
 		case 42:
 			SetSuspendState(false, true, true);
+			KillTimer(hWnd, 42);
 			return 0;
 		}
 	}
